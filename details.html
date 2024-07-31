@@ -11,5 +11,33 @@
 <p>User since: {{ myuser.join_date }}</p>
 
 <p>Back to <a href="/users">Users</a></p>
+% extends "master.html" %}
 
+{% block title %}
+  Details about {{ mymember.firstname }} {{ mymember.lastname }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ myuser.firstname }} {{ myuser.lastname }}</h1>
+  
+<p>Phone: {{ myuser.phone }}</p>
+<p>User since: {{ myuser.join_date }}</p>
+% extends "master.html" %}
+
+{% block title %}
+  Details about {{ mymember.firstname }} {{ mymember.lastname }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ myuser.firstname }} {{ myuser.lastname }}</h1>
+  
+<p>Phone: {{ myuser.phone }}</p>
+<p>User since: {{ myuser.join_date }}</p>
+
+<p>Back to <a href="/users">Users</a></p>
+
+{% endblock %}
+<p>Back to <a href="/users">Users</a></p>
+
+{% endblock %}
 {% endblock %}
